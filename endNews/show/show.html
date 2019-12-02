@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link href="../css/show.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/slider.css">
+    <script src="../js/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="box">
+        <div id="contentBox">
+            <div id="header"></div>
+            <div id="content">
+                <div id="menu">
+                    <ul id="menu_list">
+                        <li><a class="linkNews" href="show.html">首页</a></li>
+                        <li><a class="linkNews" href="showLists.php?id=1">国际新闻</a></li>
+                        <li><a class="linkNews" href="showLists.php?id=2">军事新闻</a></li>
+                        <li><a class="linkNews" href="showLists.php?id=3">体育新闻</a></li>
+                        <li><a class="linkNews" href="showLists.php?id=4">国内要事</a></li>
+                    </ul>
+                    <form action="searchNews.php">
+                        <div id="search">
+                            <input name="search" type="text" id="search-news" placeholder="搜索...">
+                            <button type="submit">搜索</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div id="img-box">
+                    <div id="slider">
+                        <a href="#" id="link">
+                            <img src="#" alt="" id="img1" />
+                            <img src="#" alt="" id="img2" />
+                            <div id="txt"></div>
+                        </a>
+
+                        <div id="dotBox">
+                            <ul id="dot"></ul>
+                        </div>
+                    </div>
+                </div>
+                <!--<form action="showLists.php">-->
+                    <div id="main-news">
+                        <span class="newsT" id="newsT">最新资讯</span>
+                        <span class="newsT" id="newsT2">更新时间</span>
+                        <button class="moreNews" id="mainSpanNews" onclick="showAllNews()">more>></button>
+                    </div>
+
+
+                    <div id="new-left">
+                        <span class="tNews" id="tNews1">文章列表</span>
+                        <span class="tNews" id="tNews2">更新时间</span>
+                        <button class="moreNews" id="spanNewLeft" onclick="showLanmu1()">more>></button>
+                    </div>
+                    <div id="new-mid">
+                        <span class="tNews" id="tNews3">文章列表</span>
+                        <span class="tNews" id="tNews4">更新时间</span>
+                        <button class="moreNews" id="spanMainMid" onclick="showLanmu2()">more>></button>
+                    </div>
+                    <div id="new-right">
+                        <span class="tNews" id="tNews5">文章列表</span>
+                        <span class="tNews" id="tNews6">更新时间</span>
+                        <button class="moreNews" id="spanMainRight" onclick="showLanmu3()">more>></button>
+                    </div>
+                <!--</form>-->
+            </div>
+            <div id="footer">
+                <div id="links">
+                    <p><a class="linkNews" href="http://www.cslg.edu.cn">学校官网</a></p>
+                    <p>Copyright © 2019 常熟理工学院 All rights reserved. 苏ICP备05026756号 苏公网安备 32058102001107号</p>
+                    <p>地址：江苏省常熟市南三环路99号（东湖校区） 湖山路99号（东南校区）</p>
+                    <p>电话：0512-52251113 普通高考招生热线：52251131 邮编：215500</p>
+                </div>
+                <div id="info">
+                    <p><a class="linkNews" href="../users/index.html">栏目管理员</a></p>
+                    <p><a class="linkNews" href="../admin/login.html">超级管理员登录</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    show1();
+    timer1=setInterval(show1,60000);
+    function show1(){
+        $.ajax({
+            url: 'showUpdate.php',
+            dataType:"json",
+            success: function(data){
+                $(".lNews").remove();
+                $(".lineNews").remove();
+                var ss="";
+                var j;
+                for(var i=0; i<data.length; i++){
+                    j=i;
+                    if(j<4)
+                    {
+                        if(data[j].title.length>12){
+                            ss=data[j].title.substr(0,11)+"...";
+                        }
+                        else{
+                            ss=data[j].title;
+                        }
+                        var str = '<a class="linkNews" href="showNews.php?id='+data[j].newId+'"><span class="lineNews">'+ss+'</span>'+'<span class="lineNews">'+data[j].addTime+'</span></a>'
+
+                        $("#main-news").append(str);
+                    }
+                    if(data[i].title.length>10){
+                        ss=data[i].title.substr(0,10)+"...";
+                    }
+                    else{
+                        ss=data[i].title;
+                    }
+                    var str = '<a class="linkNews" href="showNews.php?id='+data[i].newId+'"><span class="lNews">'+ss+'</span>'+'<span class="lNews">'+data[i].addTime+'</span></a>'
+                    if(data[i].lanmuId==1)
+                        $("#new-left").append(str);
+                    else if(data[i].lanmuId==2)
+                        $("#new-mid").append(str);
+                    else{$("#new-right").append(str);}
+                }
+
+            }
+        });
+    }
+
+    function showAllNews() {
+        window.location="showLists.php?id=*";
+    }
+
+    function showLanmu1() {
+        window.location="showLists.php?id=1";
+    }
+    function showLanmu2() {
+        window.location="showLists.php?id=2";
+    }
+    function showLanmu3() {
+        window.location="showLists.php?id=3";
+    }
+
+
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        var imgs=["../img/1.jpg","../img/2.jpg","../img/3.jpg","../img/4.jpg","../img/5.png"];
+        var txts=["外媒：美国将自6月23日起大规模驱逐非法移民",
+            "辽宁舰编队刚进南海仅一天 美日航母就在南海军演",
+            "印度征收报复性关税反击美国：我不是软柿子",
+            "CNN：以色列卫星图显示歼10“首次”部署永兴岛",
+            "火箭又连签三员猛将！ 场均30分新地表最强175"];
+        var links=["showNews.php?id=1",
+            "showNews.php?id=5",
+            "showNews.php?id=4",
+            "showNews.php?id=6",
+            "showNews.php?id=8"];
+        for(var i=0;i<imgs.length;i++)
+        {
+            $("#dot").append("<li>●</li>");
+        }
+        var k=0;//存放当前图片的下标
+        $('#img2').attr("src",imgs[k]);
+        showImg();
+        function showImg(){
+            $("#txt").text(txts[k]);
+            $('#link').attr("href",links[k]);
+            $('#dot>li').css("color","#ccc");
+            $("#dot>li").eq(k).css("color","fff");
+            //先把下面图片的src设为上面图片的src;
+            $("#img1").attr("src",$("#img2").attr("src"));
+            //接下来为了实现无缝轮播，需要将上面图片src设置为将要显示图片的src，
+            //但不是马上显示;
+            $('#img2').attr('src',imgs[k]).css("display","none");
+            $('#img2').fadeIn(1000);//淡入
+
+        }
+        function autoPlay(){
+            k++;
+            k%=imgs.length;
+            showImg();
+        }
+        var timer=setInterval(autoPlay,3000);
+        $("#slider").mouseover(function(){
+            clearInterval(timer);
+        });
+        $("#slider").on("mouseout",function(){
+            timer=setInterval(autoPlay,3000);
+        });
+        $("#dot>li").on("mouseover",function(){
+            k=$(this).index();//jq的index方法，可以获取当前对象所在数组中的下标
+            showImg();
+            clearInterval(timer);
+        });
+    })
+</script>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="is-centered is-bold">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+<section style="background: transparent">
+    <form class="box py-3 px-4 px-2-mobile" role="form" method="post" action="checkLogin.php" autocomplete="on">
+        <div class="is-flex is-column is-justified-to-center">
+            <h1 class="title is-3 mb-a has-text-centered">
+                登录
+            </h1>
+            <div class="inputs-wrap py-3">
+                <div class="control">
+                    <input type="text" id="username" name="username" class="input" placeholder="用户名" value="" required>
+                </div>
+                <div class="control">
+                    <input type="password" id="password" name="password" class="input" placeholder="密码" required>
+                </div>
+                <div class="control">
+                    <button type="submit" class="button is-submit is-primary is-outlined">
+                        登录
+                    </button>
+                </div>
+                <div class="control">
+                    <button type="button" class="button is-submit is-primary is-outlined" onclick="jump()">
+                        注册
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+</body>
+<script>
+    function jump() {
+        window.open("register.php");
+    }
+</script>
+</html>
+

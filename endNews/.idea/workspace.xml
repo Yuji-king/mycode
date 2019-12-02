@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24e6cbd7-91d5-4a99-b40b-b257f39e211c" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>article-title</find>
+      <find>sear</find>
+      <find>button</find>
+      <find>sea</find>
+      <find>spanTitle</find>
+      <find>Title</find>
+      <find>txtHint</find>
+      <find>icon-trash-o</find>
+      <find>首页</find>
+      <find>修改</find>
+      <find>flush_head</find>
+      <find>header</find>
+      <find>li</find>
+      <find>moreNews</find>
+      <find>border-ra</find>
+      <find>tne</find>
+      <find>mo</find>
+      <find>links</find>
+      <find>info</find>
+      <find>more</find>
+      <find>time</find>
+      <find>border</find>
+      <find>link</find>
+      <find>url</find>
+      <find>background</find>
+      <find>bg</find>
+      <find>h1</find>
+    </findStrings>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 5.5">
+    <include_path>
+      <path value="" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1SMCFo1g51FTMEpTNZrvy3V0T9j" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\phpstudy\PHPTutorial\WWW\endNews\users\images" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\endNews\img" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\endNews\admin" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\endNews\admin\css" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\endNews\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\phpstudy\PHPTutorial\WWW\endNews\js" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\endNews\admin" />
+      <recent name="F:\phpstudy\PHPTutorial\WWW\endNews\show" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24e6cbd7-91d5-4a99-b40b-b257f39e211c" name="Default Changelist" comment="" />
+      <created>1559015928484</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559015928484</updated>
+      <workItem from="1559015929770" duration="7677000" />
+      <workItem from="1559053806617" duration="5523000" />
+      <workItem from="1559103296181" duration="11252000" />
+      <workItem from="1559184592356" duration="13146000" />
+      <workItem from="1559286194697" duration="4896000" />
+      <workItem from="1559644387825" duration="5122000" />
+      <workItem from="1559655099325" duration="13838000" />
+      <workItem from="1559798691771" duration="6402000" />
+      <workItem from="1559879015098" duration="5641000" />
+      <workItem from="1560046850143" duration="17514000" />
+      <workItem from="1560132181963" duration="25541000" />
+      <workItem from="1560433980316" duration="825000" />
+      <workItem from="1561042430931" duration="2628000" />
+      <workItem from="1561085358629" duration="16019000" />
+      <workItem from="1561130064758" duration="55630000" />
+      <workItem from="1561229178082" duration="4419000" />
+      <workItem from="1561346419092" duration="1090000" />
+      <workItem from="1561347900758" duration="7872000" />
+      <workItem from="1561436327447" duration="3232000" />
+      <workItem from="1563191675116" duration="285000" />
+      <workItem from="1563368761868" duration="68000" />
+      <workItem from="1565266652922" duration="633000" />
+      <workItem from="1565272110005" duration="21000" />
+      <workItem from="1571363986377" duration="66000" />
+      <workItem from="1571393747712" duration="918000" />
+      <workItem from="1573109460538" duration="23000" />
+      <workItem from="1574160228427" duration="191000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

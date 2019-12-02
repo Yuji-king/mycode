@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻内容</title>
+    <link href="../css/show.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/showNews.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/nprogress.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div id="box">
+    <div id="contentBox">
+        <div id="header"></div>
+        <div id="content">
+            <div id="menu">
+                <ul id="menu_list">
+                    <li><a class="linkNews" href="show.html">首页</a></li>
+                    <li><a class="linkNews" href="showLists.php?id=1">国际新闻</a></li>
+                    <li><a class="linkNews" href="showLists.php?id=2">军事新闻</a></li>
+                    <li><a class="linkNews" href="showLists.php?id=3">体育新闻</a></li>
+                    <li><a class="linkNews" href="showLists.php?id=4">国内要事</a></li>
+                </ul>
+                <form action="searchNews.php">
+                    <div id="search">
+                        <input name="search" type="text" id="search-news" placeholder="搜索...">
+                        <button type="submit" id="btnSearch" style="width: 60px"><span id="spanSearch">搜索</span></button>
+                    </div>
+                </form>
+
+            </div>
+            <div id="contNews" style="background-color: #FFEEDD">
+                <div id="newsTitle">
+                    <h1 class="article-title" style="text-align: center;">
+                        <?php foreach($sth as $row){
+                            echo $row['title'];
+                        }?>
+                    </h1>
+                    <div class="article-meta" style="text-align: center">
+                        时间：
+                        <?php echo $row['addTime'];?>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        类型：
+                        <?php echo $row['lanmuName'];?>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        点击数：
+                        <?php echo $row['hitCounts'];?>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <?php echo $row['userName'];?>
+                    </div>
+                    <hr>
+                <article class="article-content">
+                    <p>
+                        <?php echo $row['contents']; ?>
+                    </p>
+
+                </article>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div id="footer">
+            <div id="links">
+                <p><a class="linkNews" href="http://www.cslg.edu.cn">学校官网</a></p>
+                <p>Copyright © 2019 常熟理工学院 All rights reserved. 苏ICP备05026756号 苏公网安备 32058102001107号</p>
+                <p>地址：江苏省常熟市南三环路99号（东湖校区） 湖山路99号（东南校区）</p>
+                <p>电话：0512-52251113 普通高考招生热线：52251131 邮编：215500</p>
+            </div>
+            <div id="info">
+                <p><a class="linkNews" href="../users/index.html">栏目管理员</a></p>
+                <p><a class="linkNews" href="../admin/login.html">超级管理员登录</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+
+</script>
